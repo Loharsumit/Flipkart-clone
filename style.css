@@ -1,0 +1,189 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Mulish', sans-serif;
+    background-color: #fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+}
+
+#search{
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#btn{
+    width: 100px;
+    height: 30px;
+    background: rgb(6, 6, 137);
+    color: #fff;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#btn:hover{
+    background-color: #2f3151;
+    color: #fff;
+}
+
+#srcBtn{
+    width: 100px;
+    height: 30px;
+    background: orange;
+    color: #fff;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-top: 10px;
+    padding: 30px;
+    background: #fff;
+    
+}
+
+.catType{
+    background: #fff;
+    cursor: pointer;
+}
+
+.catType p{
+    text-align:inherit;
+    background-color: #fff;
+}
+
+
+.carousel{
+    margin: 10px;
+}
+
+.carousel button{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 60px;
+    width: 30px;
+    height: 100px;
+    background: rgb(247, 246, 246);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 20px;
+}
+
+.cards img{
+    width: 485px;
+    height: 250px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 80px 0;
+    background-color: #fff;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos h1 {
+    position: absolute;
+    top: 20px;
+    left: 600px;
+    font-size: 33px;
+    color: #130f40;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.logos:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+.logos:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logo-slide {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.logo-slide img {
+   height: 250px;
+   margin:  0 40px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #212121;
+    height: 300px;
+    color: white;
+    padding: 48px;
+    margin-top: 30px;
+}
+
+.footer .list ul li h4, a{
+    background-color: #212121;
+}
+
+.footer .list ul li{
+    list-style: none;
+    background: #212121;
+}
+
+.list, ul{
+    background: #212121;
+}
+
+li a{
+    display: block;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.base p{
+    text-align: center;
+    background-color: #212121;
+    color: #fff;
+}
